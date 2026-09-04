@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 — 명함 스캐너</title>
+<style>
+  :root { color-scheme: light; }
+  body { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 4rem;
+         font: 16px/1.75 -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+         color: #1f2937; background: #fff; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.25rem; padding-top: 1rem; border-top: 1px solid #e5e7eb; }
+  .meta { color: #6b7280; font-size: .9rem; margin-bottom: 2rem; }
+  .lead { background: #f3f4f6; border-radius: .5rem; padding: 1rem 1.25rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { border: 1px solid #e5e7eb; padding: .5rem .7rem; text-align: left; vertical-align: top; }
+  th { background: #f9fafb; }
+  code { background: #f3f4f6; padding: .1rem .3rem; border-radius: .25rem; font-size: .9em; }
+</style>
+</head>
+<body>
+
+<h1>개인정보처리방침</h1>
+<p class="meta">명함 스캐너 (Card Scanner) · Android · 제공: arcaneloft<br>시행일 2026-09-05 · 최종 개정 2026-09-05</p>
+
+<p class="lead">
+  <strong>명함 정보는 기기 밖으로 나가지 않습니다.</strong>
+  촬영·판독·저장이 전부 사용자의 기기 안에서 이루어지며,
+  명함 이미지·인식된 글자·연락처는 어떤 서버로도 전송되지 않습니다.<br>
+  다만 <strong>광고 표시를 위해 Google AdMob 이 광고 식별자를 처리</strong>합니다(아래 7항).
+</p>
+
+<h2>1. 수집하는 개인정보</h2>
+<p><strong>개발자가 직접 수집하는 개인정보는 없습니다.</strong>
+회원가입·로그인이 없고, 명함에서 읽은 이름·전화번호·회사명은 기기 밖으로 나가지 않습니다.</p>
+<p>단, 앱에 표시되는 광고를 위해 <strong>Google AdMob</strong> 이
+광고 식별자(Android 광고 ID)와 기기·앱 정보를 처리합니다.
+이 정보는 Google 이 광고 게재·측정·부정클릭 방지 목적으로 처리하며,
+<strong>개발자는 이를 수집하거나 저장하지 않고 열람할 수도 없습니다.</strong>
+자세한 내용은 <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google 파트너 사이트 정책</a>을 참고하십시오.</p>
+
+<h2>2. 기기 안에서 처리·보관되는 정보</h2>
+<p>아래 정보는 <strong>사용자의 기기에만</strong> 저장되며 개발자를 포함한 누구도 접근할 수 없습니다.</p>
+<table>
+  <tr><th>항목</th><th>내용</th><th>보관 위치</th></tr>
+  <tr><td>명함 이미지</td><td>촬영·선택한 사진</td><td>기기 저장소</td></tr>
+  <tr><td>인식 결과</td><td>이름·직위·부서·회사명·전화번호, OCR 원문</td><td>기기 저장소(스캔 기록)</td></tr>
+  <tr><td>사용 횟수</td><td>무료 스캔 잔여 횟수, 초기화 날짜</td><td>기기 저장소</td></tr>
+</table>
+<p><strong>파기:</strong> 설정 화면의 <em>‘스캔 기록 모두 비우기’</em>로 언제든 삭제할 수 있고,
+앱을 삭제하면 위 정보도 함께 지워집니다. 개별 기록도 하나씩 삭제할 수 있습니다.</p>
+
+<h2>3. 문자 인식(OCR) 처리 방식</h2>
+<p>명함의 글자 인식은 기기에 내장된 <strong>Google ML Kit 텍스트 인식</strong>으로,
+인터넷 연결 없이 <strong>기기 안에서</strong> 수행됩니다.
+명함 이미지가 외부 서버로 업로드되지 않으며, 인공지능 서비스나 외부 API를 사용하지 않습니다.</p>
+
+<h2>4. 앱이 사용하는 네트워크 통신</h2>
+<p>명함과 관련해 앱이 외부와 주고받는 통신은 <strong>판독 규칙 파일을 내려받는 것 하나뿐</strong>입니다. (광고 관련 통신은 7항 참고)</p>
+<ul>
+  <li>인식 정확도를 높이기 위한 규칙·사전(직위 목록, 회사명 키워드 등)을 <strong>내려받기만</strong> 합니다.</li>
+  <li>이 통신에는 <strong>개인정보가 한 바이트도 포함되지 않습니다.</strong> 올려보내는 데이터가 없습니다.</li>
+  <li>인터넷이 없어도 앱에 들어있는 기본 규칙으로 정상 동작합니다.</li>
+</ul>
+
+<h2>5. 접근 권한</h2>
+<table>
+  <tr><th>권한</th><th>사용 목적</th><th>필수 여부</th></tr>
+  <tr><td>카메라</td><td>명함을 촬영합니다.</td><td>선택</td></tr>
+  <tr><td>사진/미디어</td><td>저장된 명함 사진을 불러옵니다.</td><td>선택</td></tr>
+  <tr><td>연락처 쓰기</td><td>사용자가 저장을 누를 때만 이름과 전화번호를 기기 연락처에 추가합니다.</td><td>선택</td></tr>
+</table>
+<p>연락처는 <strong>쓰기 용도로만</strong> 사용합니다. 기존 연락처를 읽어 외부로 보내거나 분석하지 않습니다.
+권한은 거부할 수 있으며, 거부해도 해당 기능만 제한될 뿐 앱은 사용할 수 있습니다.</p>
+
+<h2>6. 제3자 제공 및 위탁</h2>
+<p>수집하는 개인정보가 없으므로 <strong>제3자에게 제공하거나 판매·위탁하는 정보가 없습니다.</strong></p>
+
+<h2>7. 광고</h2>
+<p>이 앱은 <strong>Google AdMob</strong> 의 보상형 동영상 광고를 사용합니다.
+하루 무료 스캔 횟수를 모두 사용한 뒤, <strong>사용자가 직접 버튼을 눌러 시청을 선택한 경우에만</strong>
+광고가 재생됩니다. 배너 광고나 자동으로 뜨는 전면 광고는 없습니다.</p>
+<ul>
+  <li><strong>처리 주체:</strong> Google (AdMob). 개발자는 광고 식별자를 받지도, 저장하지도 않습니다.</li>
+  <li><strong>처리 정보:</strong> 광고 식별자, 기기 종류·운영체제, 대략적 지역 등 광고 게재에 필요한 정보</li>
+  <li><strong>맞춤 광고 동의:</strong> 유럽경제지역(EEA)·영국 등 동의가 필요한 지역에서는
+      앱 실행 시 동의 양식을 표시하며, 동의하지 않으면 <strong>비개인화 광고</strong>만 표시됩니다.</li>
+  <li><strong>광고 식별자 재설정:</strong> 안드로이드 <em>설정 → 개인정보 보호 → 광고</em> 에서
+      광고 ID를 삭제하거나 초기화할 수 있습니다.</li>
+</ul>
+<p>광고 시청 여부와 무관하게 <strong>명함 이미지나 인식 결과가 광고 사업자에게 전달되는 일은 없습니다.</strong></p>
+
+<h2>8. 결제</h2>
+<p>현재 버전에는 유료 결제가 없습니다.
+향후 유료 기능을 도입할 경우 결제는 <strong>Google Play 스토어를 통해서만</strong> 이루어지며,
+개발자는 카드번호·계좌 등 결제수단 정보를 수집하거나 저장하지 않습니다.</p>
+
+<h2>9. 아동의 개인정보</h2>
+<p>이 앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동으로부터 개인정보를 수집하지 않습니다.</p>
+
+<h2>10. 이용자의 권리</h2>
+<p>이 앱이 보관하는 정보는 전부 사용자의 기기 안에 있으므로,
+열람·수정·삭제를 사용자가 직접 그리고 즉시 할 수 있습니다.
+개발자에게 별도로 요청하실 필요가 없습니다.</p>
+
+<h2>11. 방침 변경</h2>
+<p>이 방침이 변경되면 이 페이지에 개정 내용과 시행일을 게시합니다.
+중요한 변경(수집 항목 추가 등)은 앱 내에서도 안내합니다.</p>
+
+<h2>12. 개인정보처리자 및 문의처</h2>
+<table>
+  <tr><th>구분</th><th>내용</th></tr>
+  <tr><td>개인정보처리자</td><td>arcaneloft (개인 개발자)</td></tr>
+  <tr><td>앱</td><td>명함 스캐너 (Card Scanner) · Android</td></tr>
+  <tr><td>문의</td><td><a href="mailto:arcanesoft438@gmail.com">arcanesoft438@gmail.com</a></td></tr>
+</table>
+<p>개인정보 처리에 관한 문의·열람·삭제 요청은 위 이메일로 접수하며, 접수 후 지체 없이 처리합니다.
+다만 이 앱이 보관하는 정보는 전부 이용자의 기기 안에 있어 이용자가 직접 즉시 삭제할 수 있습니다(10항).</p>
+
+</body>
+</html>
