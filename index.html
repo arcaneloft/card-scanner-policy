@@ -8,7 +8,7 @@
      심사자는 사람이 직접 여는 것이라 영향이 없다. -->
 <meta name="robots" content="noindex, nofollow">
 <meta name="googlebot" content="noindex, nofollow">
-<title>개인정보처리방침 — 명함 스캐너</title>
+<title>개인정보처리방침 / Privacy Policy — 명함 스캐너</title>
 <style>
   :root { color-scheme: light; }
   body { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 4rem;
@@ -22,9 +22,28 @@
   th, td { border: 1px solid #e5e7eb; padding: .5rem .7rem; text-align: left; vertical-align: top; }
   th { background: #f9fafb; }
   code { background: #f3f4f6; padding: .1rem .3rem; border-radius: .25rem; font-size: .9em; }
+  /* 언어 전환. 하나의 URL 로 두 언어를 다 담는다 —
+     AdMob 동의 메시지와 Play Console 은 방침 URL 을 한 칸씩만 받는다.
+     따로 두면 한쪽만 고쳐지는 사고가 난다. */
+  .langbar { display: flex; gap: .5rem; margin-bottom: 1.5rem; }
+  .langbar button {
+    font: inherit; font-size: .9rem; cursor: pointer;
+    padding: .35rem .9rem; border-radius: 2rem;
+    border: 1px solid #d1d5db; background: #fff; color: #4b5563;
+  }
+  .langbar button[aria-pressed="true"] { background: #1f2937; border-color: #1f2937; color: #fff; }
+  [hidden] { display: none !important; }
 </style>
 </head>
 <body>
+
+<div class="langbar">
+  <button type="button" data-lang="ko" aria-pressed="true">한국어</button>
+  <button type="button" data-lang="en" aria-pressed="false">English</button>
+</div>
+
+<!-- ────────────────────────────── 한국어 ────────────────────────────── -->
+<div id="doc-ko">
 
 <h1>개인정보처리방침</h1>
 <p class="meta">명함 스캐너 (Card Scanner) · Android · 제공: arcaneloft<br>시행일 2026-09-05 · 최종 개정 2026-09-05</p>
@@ -122,6 +141,164 @@
 </table>
 <p>개인정보 처리에 관한 문의·열람·삭제 요청은 위 이메일로 접수하며, 접수 후 지체 없이 처리합니다.
 다만 이 앱이 보관하는 정보는 전부 이용자의 기기 안에 있어 이용자가 직접 즉시 삭제할 수 있습니다(10항).</p>
+
+</div>
+
+<!-- ────────────────────────────── English ────────────────────────────── -->
+<div id="doc-en" hidden>
+
+<h1>Privacy Policy</h1>
+<p class="meta">Card Scanner (명함 스캐너) · Android · Provided by arcaneloft<br>Effective 2026-09-05 · Last revised 2026-09-05</p>
+
+<p class="lead">
+  <strong>Business card data never leaves your device.</strong>
+  Capture, recognition and storage all happen on your device, and card images,
+  recognised text and contacts are never transmitted to any server.<br>
+  However, <strong>Google AdMob processes an advertising identifier in order to
+  serve ads</strong> (see section 7).
+</p>
+
+<h2>1. Personal data we collect</h2>
+<p><strong>The developer collects no personal data.</strong>
+There is no sign-up or login, and names, phone numbers and company names read
+from business cards never leave your device.</p>
+<p>However, in order to display ads, <strong>Google AdMob</strong> processes an
+advertising identifier (the Android Advertising ID) together with device and app
+information. Google processes this data to serve and measure ads and to prevent
+click fraud. <strong>The developer neither collects, stores, nor is able to view
+it.</strong> For details, see the
+<a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google partner sites policy</a>.</p>
+
+<h2>2. Data processed and stored on your device</h2>
+<p>The data below is stored <strong>only on your device</strong>. No one, including
+the developer, can access it.</p>
+<table>
+  <tr><th>Item</th><th>Contents</th><th>Where it is kept</th></tr>
+  <tr><td>Card images</td><td>Photos you take or select</td><td>Device storage</td></tr>
+  <tr><td>Recognition results</td><td>Name, title, department, company, phone number, raw OCR text</td><td>Device storage (scan history)</td></tr>
+  <tr><td>Usage count</td><td>Remaining free scans, reset date</td><td>Device storage</td></tr>
+</table>
+<p><strong>Deletion:</strong> You can erase everything at any time with
+<em>“Clear all scan history”</em> in Settings, and uninstalling the app removes it
+as well. Individual records can also be deleted one by one.</p>
+
+<h2>3. How text recognition (OCR) works</h2>
+<p>Text on business cards is recognised by <strong>Google ML Kit text
+recognition</strong> built into the device, <strong>entirely on-device</strong> and
+without an internet connection. Card images are never uploaded to any server, and
+no AI service or external API is used.</p>
+
+<h2>4. Network communication the app performs</h2>
+<p>For business-card processing, the app’s only external communication is
+<strong>downloading a recognition rules file</strong>. (For ad-related
+communication, see section 7.)</p>
+<ul>
+  <li>It <strong>only downloads</strong> rules and dictionaries that improve
+      recognition accuracy (job-title lists, company-name keywords and so on).</li>
+  <li>This communication contains <strong>not one byte of personal data.</strong>
+      Nothing is uploaded.</li>
+  <li>The app works normally without internet, using the rules bundled in the app.</li>
+</ul>
+
+<h2>5. Permissions</h2>
+<table>
+  <tr><th>Permission</th><th>Purpose</th><th>Required?</th></tr>
+  <tr><td>Camera</td><td>To photograph business cards.</td><td>Optional</td></tr>
+  <tr><td>Photos / media</td><td>To load saved card photos.</td><td>Optional</td></tr>
+  <tr><td>Write contacts</td><td>Adds a name and phone number to your device contacts, only when you tap Save.</td><td>Optional</td></tr>
+</table>
+<p>Contacts are used <strong>for writing only</strong>. The app does not read your
+existing contacts, send them anywhere, or analyse them. You may deny any
+permission; doing so limits only that feature, and the app remains usable.</p>
+
+<h2>6. Sharing with third parties and processing on our behalf</h2>
+<p>Because no personal data is collected, <strong>there is nothing to share,
+sell, or have processed by a third party.</strong></p>
+
+<h2>7. Advertising</h2>
+<p>This app uses <strong>Google AdMob</strong> rewarded video ads. After you have
+used up the free scans for the day, an ad plays
+<strong>only when you choose to watch one by tapping the button yourself</strong>.
+There are no banner ads and no interstitials that appear on their own.</p>
+<ul>
+  <li><strong>Who processes the data:</strong> Google (AdMob). The developer neither
+      receives nor stores the advertising identifier.</li>
+  <li><strong>Data processed:</strong> the advertising identifier, device type and
+      operating system, approximate region, and other information needed to serve ads.</li>
+  <li><strong>Consent for personalised ads:</strong> in regions where consent is
+      required, such as the European Economic Area (EEA) and the UK, a consent form
+      is shown when the app starts. If you do not consent, only
+      <strong>non-personalised ads</strong> are shown.</li>
+  <li><strong>Resetting the advertising identifier:</strong> you can delete or reset
+      your advertising ID in Android under
+      <em>Settings → Privacy → Ads</em>.</li>
+</ul>
+<p>Whether or not you watch an ad, <strong>card images and recognition results are
+never passed to any advertising provider.</strong></p>
+
+<h2>8. Payments</h2>
+<p>The current version has no paid purchases. Should paid features be introduced,
+payment will be handled <strong>solely through the Google Play Store</strong>, and
+the developer will not collect or store payment details such as card or account
+numbers.</p>
+
+<h2>9. Children’s privacy</h2>
+<p>This app is not directed at children under 14, and no personal data is collected
+from children.</p>
+
+<h2>10. Your rights</h2>
+<p>All information this app keeps is on your own device, so you can view, correct
+and delete it yourself, immediately. There is no need to send a separate request to
+the developer.</p>
+
+<h2>11. Changes to this policy</h2>
+<p>If this policy changes, the revision and its effective date will be posted on
+this page. Significant changes, such as adding a category of collected data, will
+also be announced inside the app.</p>
+
+<h2>12. Data controller and contact</h2>
+<table>
+  <tr><th>Item</th><th>Details</th></tr>
+  <tr><td>Data controller</td><td>arcaneloft (independent developer)</td></tr>
+  <tr><td>App</td><td>Card Scanner (명함 스캐너) · Android</td></tr>
+  <tr><td>Contact</td><td><a href="mailto:arcanesoft438@gmail.com">arcanesoft438@gmail.com</a></td></tr>
+</table>
+<p>Enquiries about data processing, and requests for access or deletion, are
+received at the email address above and handled without delay. Note that all
+information this app keeps is on your own device, so you can delete it yourself
+immediately (section 10).</p>
+
+</div>
+
+<script>
+  // 어느 언어를 먼저 보여줄지.
+  //   ?lang=en  으로 못박을 수 있고,
+  //   그게 없으면 브라우저 언어를 본다 — 한국어가 아니면 영문을 띄운다.
+  // AdMob 동의 양식은 영어로만 만들 수 있어서, 그 양식에서 넘어온 유럽 사용자가
+  // 한국어 페이지를 마주하는 일이 없어야 한다.
+  (function () {
+    var docs = { ko: document.getElementById('doc-ko'), en: document.getElementById('doc-en') };
+    var btns = document.querySelectorAll('.langbar button');
+
+    function show(lang) {
+      if (!docs[lang]) lang = 'ko';
+      docs.ko.hidden = lang !== 'ko';
+      docs.en.hidden = lang !== 'en';
+      document.documentElement.lang = lang;
+      btns.forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b.dataset.lang === lang));
+      });
+    }
+
+    var asked = new URLSearchParams(location.search).get('lang');
+    var browser = (navigator.language || 'ko').toLowerCase();
+    show(asked || (browser.indexOf('ko') === 0 ? 'ko' : 'en'));
+
+    btns.forEach(function (b) {
+      b.addEventListener('click', function () { show(b.dataset.lang); });
+    });
+  })();
+</script>
 
 </body>
 </html>
