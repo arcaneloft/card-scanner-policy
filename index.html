@@ -46,7 +46,7 @@
 <div id="doc-ko">
 
 <h1>개인정보처리방침</h1>
-<p class="meta">한글 명함 스캐너 (Card Scanner) · Android · 제공: arcaneloft<br>시행일 2026-09-05 · 최종 개정 2026-09-05</p>
+<p class="meta">한글 명함 스캐너 (Card Scanner) · Android · 제공: arcaneloft<br>시행일 2026-09-05 · 최종 개정 2026-09-15</p>
 
 <p class="lead">
   <strong>명함 정보는 기기 밖으로 나가지 않습니다.</strong>
@@ -96,8 +96,10 @@
   <tr><td>사진/미디어</td><td>저장된 명함 사진을 불러옵니다.</td><td>선택</td></tr>
   <tr><td>연락처 쓰기</td><td>사용자가 저장을 누를 때만 이름과 전화번호를 기기 연락처에 추가합니다.</td><td>선택</td></tr>
 </table>
-<p>연락처는 <strong>쓰기 용도로만</strong> 사용합니다. 기존 연락처를 읽어 외부로 보내거나 분석하지 않습니다.
-권한은 거부할 수 있으며, 거부해도 해당 기능만 제한될 뿐 앱은 사용할 수 있습니다.</p>
+<p>연락처는 <strong>쓰기 용도로만</strong> 사용합니다. 기존 연락처를 읽어 외부로 보내거나 분석하지 않습니다.</p>
+<p>다만 권한 화면에는 <strong>‘연락처 읽기’ 도 함께 표시</strong>됩니다. 연락처를 추가하는 데 쓰는
+안드로이드 라이브러리가 읽기 권한을 함께 요구하기 때문이며, 앱이 실제로 기존 연락처를 읽는 기능은 없습니다.</p>
+<p>권한은 거부할 수 있으며, 거부해도 해당 기능만 제한될 뿐 앱은 사용할 수 있습니다.</p>
 
 <h2>6. 제3자 제공 및 위탁</h2>
 <p>수집하는 개인정보가 없으므로 <strong>제3자에게 제공하거나 판매·위탁하는 정보가 없습니다.</strong></p>
@@ -117,9 +119,14 @@
 <p>광고 시청 여부와 무관하게 <strong>명함 이미지나 인식 결과가 광고 사업자에게 전달되는 일은 없습니다.</strong></p>
 
 <h2>8. 결제</h2>
-<p>현재 버전에는 유료 결제가 없습니다.
-향후 유료 기능을 도입할 경우 결제는 <strong>Google Play 스토어를 통해서만</strong> 이루어지며,
-개발자는 카드번호·계좌 등 결제수단 정보를 수집하거나 저장하지 않습니다.</p>
+<p>이 앱은 <strong>&lsquo;광고 없이 쓰기&rsquo;</strong> 유료 상품을 판매합니다.
+한 번 결제하시면 광고가 표시되지 않습니다.</p>
+<p>결제는 <strong>Google Play 스토어를 통해서만</strong> 이루어집니다.
+카드번호·계좌 등 결제수단 정보는 <strong>전부 구글이 처리</strong>하며,
+개발자는 이를 수집하거나 저장하지 않습니다. 볼 수도 없습니다.</p>
+<p>구매 사실은 결제하신 <strong>구글 계정에 귀속</strong>됩니다.
+앱은 Play 스토어에 구매 여부만 조회하며, 그 결과를 기기 밖으로 보내지 않습니다.
+기기를 바꾸셔도 같은 계정으로 로그인하시면 그대로 사용하실 수 있습니다.</p>
 
 <h2>9. 아동의 개인정보</h2>
 <p>이 앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동으로부터 개인정보를 수집하지 않습니다.</p>
@@ -149,7 +156,7 @@
 <div id="doc-en" hidden>
 
 <h1>Privacy Policy</h1>
-<p class="meta">Card Scanner (한글 명함 스캐너) · Android · Provided by arcaneloft<br>Effective 2026-09-05 · Last revised 2026-09-05</p>
+<p class="meta">Card Scanner (한글 명함 스캐너) · Android · Provided by arcaneloft<br>Effective 2026-09-05 · Last revised 2026-09-15</p>
 
 <p class="lead">
   <strong>Business card data never leaves your device.</strong>
@@ -210,8 +217,12 @@ communication, see section 7.)</p>
   <tr><td>Write contacts</td><td>Adds a name and phone number to your device contacts, only when you tap Save.</td><td>Optional</td></tr>
 </table>
 <p>Contacts are used <strong>for writing only</strong>. The app does not read your
-existing contacts, send them anywhere, or analyse them. You may deny any
-permission; doing so limits only that feature, and the app remains usable.</p>
+existing contacts, send them anywhere, or analyse them.</p>
+<p>The permission dialog will, however, also mention <strong>reading contacts</strong>.
+That is because the Android library used to add a contact requires the read permission
+as well; the app has no feature that reads your existing contacts.</p>
+<p>You may deny any permission; doing so limits only that feature, and the app
+remains usable.</p>
 
 <h2>6. Sharing with third parties and processing on our behalf</h2>
 <p>Because no personal data is collected, <strong>there is nothing to share,
@@ -239,10 +250,14 @@ There are no banner ads and no interstitials that appear on their own.</p>
 never passed to any advertising provider.</strong></p>
 
 <h2>8. Payments</h2>
-<p>The current version has no paid purchases. Should paid features be introduced,
-payment will be handled <strong>solely through the Google Play Store</strong>, and
-the developer will not collect or store payment details such as card or account
-numbers.</p>
+<p>This app sells one paid item, <strong>&ldquo;Use without ads&rdquo;</strong>.
+A single purchase removes advertising.</p>
+<p>Payment is handled <strong>solely through the Google Play Store</strong>.
+Payment details such as card or account numbers are <strong>processed entirely by
+Google</strong>; the developer does not collect, store, or ever see them.</p>
+<p>The purchase is tied to the <strong>Google account</strong> used to buy it.
+The app only asks the Play Store whether the item is owned, and never sends that
+answer off the device. Signing in with the same account on a new device restores it.</p>
 
 <h2>9. Children’s privacy</h2>
 <p>This app is not directed at children under 14, and no personal data is collected
